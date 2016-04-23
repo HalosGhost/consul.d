@@ -1,0 +1,8 @@
+{
+    "check": {
+        "id": "check RAM usage",
+        "name": "RAM usage",
+        "script": "free -m",
+        "interval": "300s"
+    }
+}

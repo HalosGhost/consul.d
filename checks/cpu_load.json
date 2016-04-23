@@ -1,0 +1,8 @@
+{
+    "check": {
+        "id": "report CPU load",
+        "name": "CPU Load",
+        "script": "(printf '1m  5m  15m  cur/total  last-pid\n'; cat /proc/loadavg) | column -t",
+        "interval": "60s"
+    }
+}

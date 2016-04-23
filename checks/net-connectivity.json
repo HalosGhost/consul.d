@@ -1,7 +1,7 @@
 {
     "check": {
         "id": "all network-related services are up",
-        "name": "Network Test",
+        "name": "Network Connectivity",
         "script": "for i in systemd-{network,resolve}d; do PAGER='' systemctl status \"$i\" | awk 'NR <= 3; NR == 3 { flag=($2 != \"active\"); } END { exit(flag); }'; done",
         "interval": "300s"
     }
