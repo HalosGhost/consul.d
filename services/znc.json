@@ -3,7 +3,7 @@
         "name": "ZNC",
         "port": 1025,
         "check": {
-            "script": "journalctl status znc",
+            "script": "PAGER='' systemctl status znc",
             "interval": "300s"
         }
     }

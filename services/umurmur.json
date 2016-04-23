@@ -3,7 +3,7 @@
         "name": "µMurmur",
         "port": 64738,
         "check": {
-            "script": "journalctl status umurmur",
+            "script": "PAGER='' systemctl status umurmur",
             "interval": "300s"
         }
     }
