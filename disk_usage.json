@@ -2,7 +2,7 @@
     "check": {
         "id": "check that disk usage is not >85%",
         "name": "Disk Usage",
-        "script": "df -h /dev/sdb1 | awk 'NR == 2 { print $0; sub(/%/,\"\",$5); exit($5 > 85); }'",
+        "script": "df -h /dev/sda1 | awk 'NR == 2 { print $0; sub(/%/,\"\",$5); exit($5 > 85); }'",
         "interval": "900s"
     }
 }
