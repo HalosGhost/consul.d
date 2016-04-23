@@ -1,0 +1,10 @@
+{
+    "service": {
+        "name": "ZNC",
+        "port": 1025,
+        "check": {
+            "script": "journalctl status znc",
+            "interval": "300s"
+        }
+    }
+}
