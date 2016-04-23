@@ -1,0 +1,10 @@
+{
+    "service": {
+        "name": "Webserver",
+        "port": 443,
+        "check": {
+            "script": "PAGER='' systemctl status webserver",
+            "interval": "150s"
+        }
+    }
+}

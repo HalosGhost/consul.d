@@ -1,0 +1,10 @@
+{
+    "service": {
+        "name": "Webreferrer",
+        "port": 80,
+        "check": {
+            "script": "PAGER='' systemctl status webreferrer",
+            "interval": "150s"
+        }
+    }
+}
