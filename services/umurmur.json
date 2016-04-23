@@ -1,0 +1,10 @@
+{
+    "service": {
+        "name": "µMurmur",
+        "port": 64738,
+        "check": {
+            "script": "journalctl status umurmur",
+            "interval": "300s"
+        }
+    }
+}
