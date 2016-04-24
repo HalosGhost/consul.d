@@ -4,13 +4,18 @@
     "log_level": "INFO",
     "node_name": "<fill-in-name>",
     "server": true,
+    "ui": true,
+    "enable_syslog": true,
     "addresses": {
         "https": "0.0.0.0"
     },
     "ports": {
         "https": 443
     },
-    "key_file": "/etc/ssl/private/<fill-in-name>.key",
+    "verify_server_hostname": true,
+    "verify_incoming": true,
+    "disable_remote_exec": true,
+    "key_file": "/etc/ssl/private/<fill-in-name>.pem",
     "cert_file": "/etc/ssl/certs/<fill-in-name>.crt",
     "ca_file": "/etc/ssl/certs/ca-bundle.crt"
 }
