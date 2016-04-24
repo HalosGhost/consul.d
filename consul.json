@@ -1,0 +1,16 @@
+{
+    "datacenter": "Titanus",
+    "data_dir": "/opt/consul",
+    "log_level": "INFO",
+    "node_name": "<fill-in-name>",
+    "server": true,
+    "addresses": {
+        "https": "0.0.0.0"
+    },
+    "ports": {
+        "https": 443
+    },
+    "key_file": "/etc/ssl/private/<fill-in-name>.key",
+    "cert_file": "/etc/ssl/certs/<fill-in-name>.crt",
+    "ca_file": "/etc/ssl/certs/ca-bundle.crt"
+}
