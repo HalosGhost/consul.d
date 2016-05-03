@@ -1,0 +1,8 @@
+{
+    "check": {
+        "id": "report number of available updates",
+        "name": "Update Count",
+        "script": "upd=$(checkupdates); cnt=$(echo \"$upd\" | wc -l); printf \"%d updates available\n%s\n\" $cnt \"$upd\"; exit $(( $cnt > 50 ))",
+        "interval": "24h"
+    }
+}
